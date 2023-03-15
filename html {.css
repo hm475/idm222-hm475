@@ -1,0 +1,164 @@
+html {
+  background-color: rgb(49,49,49);
+  color: #E3E3E3;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1em;
+  font-family: monospace;
+  margin: 1.25em auto 1em auto;
+}
+
+h2 {
+  font-size: 1.25em;
+  text-align: left;
+  margin: auto auto 0 1.5625em;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 2em auto .5em auto;
+}
+
+h4 {
+  font-size: 2.5em;
+  line-height: 1em;
+  padding: 0.625em auto auto auto;
+  margin: .5em 0 .25em 0;
+  color: black;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 2.25em;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p2 {
+  font-size: 1.125em;
+  font-style: italic;
+}
+
+p4 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: auto auto 0.625em auto;
+  color: black;
+}
+
+ol {
+  list-style-position: inside;
+  font-size: 1.5em;
+  padding-right: 4.0625em;
+  text-align: left;
+  margin: 0 auto auto 1.5625em;
+
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-position: inside;
+  list-style-type: square;
+  font-size: 1.5em;
+
+  line-height: 1.5em;
+  margin-top: 0;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.column-list {
+  column-count: 2;
+}
+
+a:link {
+  color: #99C7E2;
+}
+
+a:hover {
+  color:#aee0fd;
+}
+
+a:active {
+  color:#7192a5;
+}
+
+a:visited {
+  color:aqua;
+}
+
+.selfie {
+  box-shadow: 0 0 1.5625em rgb(134, 134, 134);
+ max-width: fit-content;
+ max-height: 23.5em;
+ margin: 0 auto 0 auto;
+}
+
+img {
+  padding-top: 0;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'moonlight name desert'
+    'moonlight fruit desert';
+    gap: 0.625em 0.625em;
+    margin-top: 1.875em;
+    margin-bottom: 1.25em;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.item-a {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.item-b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item-c {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.item-d {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.contact {
+  border-style: solid;
+  border-width: 0.3125em;
+  border-color: rgb(207, 212, 218);
+  background-color: rgb(134, 139, 145);
+  color: rgb(207, 212, 218);
+  width: 21.875em;
+  margin: 1.5625em auto 1.5625em auto;
+}
