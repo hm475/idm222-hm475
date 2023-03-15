@@ -7,24 +7,26 @@
   <title>Home</title>
 
   <link rel="stylesheet" href="stylesheet.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-  
-      <div class="topnav" id="myTopnav">
-        <a href="#Home" class="active">Home</a>
-        <a href="#Education">Education</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Art">Art</a>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="Education.html">Education</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Experience.html">Experience</a>
+        <a href="Art.html">Art</a>
+        <a href="Contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
 
-      <script>
+<script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -33,8 +35,20 @@
           x.className = "topnav";
         }
       }
-      </script>
-  
+window.onscroll = function() {myFunction()};
+
+var myTopnav = document.getElementById("myTopnav");
+var sticky = myTopnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    myTopnav.classList.add("sticky")
+  } else {
+    myTopnav.classList.remove("sticky");
+  }
+}
+</script>
+
   <h1 id="Links"> Alex Miller's Resume 2022 Edition!</h1>
     <div class="selfie">
       <img
@@ -53,7 +67,6 @@
       <li> <a href="#Skills"> Skills</a></li>
       <li> <a href="#Experience">Experience</a></li>
       <li> <a href="#Examples">Examples</a></li>
-      <li> <a href="#Contact">Contact Information</a></li>
     </ol>
 
   <h3 id="Education"> Education</h3>
@@ -117,7 +130,7 @@
    width= 100% height=100%
    src="fruit.jpg" alt="Photoshopped image of a pair of cherries with mouths">
     </div>
- 
+
     <div class="item-d">
    <img
    loading="lazy"
@@ -126,14 +139,6 @@
     </div>
 </div>
 
-<div class="contact">
-  <h4 id="Contact"> Contact</h4>
-      <p4>
-        You can reach me by telephone or email at:<br>
-        Phone: (xxx-yyy-zzzz)<br>
-        Email: 123.abc@gmail.com
-      </p4>
-    </div>
   <a href="#Links">Return to top</a>
 </body>
 </html>
