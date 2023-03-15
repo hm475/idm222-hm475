@@ -10,18 +10,35 @@
 
 </head>
 
-<div class="topnav" id="myTopnav">
-    <a href="#Home" class="active">Home</a>
-    <a href="#Education">Education</a>
-    <a href="#Skills">Skills</a>
-    <a href="#Experience">Experience</a>
-    <a href="#Art">Art</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
 <body>
+  
+      <div class="topnav" id="myTopnav">
+        <a href="#Home" class="active">Home</a>
+        <a href="#Education">Education</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Art">Art</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+      <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+  
   <h1 id="Links"> Alex Miller's Resume 2022 Edition!</h1>
     <div class="selfie">
       <img
