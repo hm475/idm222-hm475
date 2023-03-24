@@ -533,12 +533,39 @@ label {
   }
 }
 
-#hidden {
+#hidden1 {
   display: none;
   background: rgb(26, 26, 26);
 }
 
-:checked + #hidden {
+:checked + #hidden1 {
+  display: block;
+}
+
+#hidden2 {
+  display: none;
+  background: rgb(26, 26, 26);
+}
+
+:checked + #hidden2 {
+  display: block;
+}
+
+#hidden3 {
+  display: none;
+  background: rgb(26, 26, 26);
+}
+
+:checked + #hidden3 {
+  display: block;
+}
+
+#hidden4 {
+  display: none;
+  background: rgb(26, 26, 26);
+}
+
+:checked + #hidden4 {
   display: block;
 }
 
