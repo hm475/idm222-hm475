@@ -53,11 +53,10 @@ h2 {
 h3 {
   font-size: 4em;
   line-height: 1em;
-  padding-top: .5em;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1em;
   padding-top: .25em;
   padding-bottom: 0%;
@@ -100,7 +99,6 @@ p {
   h3 {
     font-size: 5.75em;
     line-height: 1em;
-    padding-top: 1em;
   }
 
   h4 {
@@ -128,9 +126,9 @@ p {
   }
 
   h3 {
-    font-size: 7.5em;
+    font-size: 9rem;
     line-height: 1em;
-    padding-top: 1em;
+    margin-bottom: 0%;
   }
 
   h4 {
@@ -208,7 +206,6 @@ img {
 .nav-grid {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  gap: auto;
   padding: 0;
 }
 
