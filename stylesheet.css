@@ -240,6 +240,7 @@ img {
 }
 }
 
+/*Homepage Section Start*/
 
 .index {
   background: #2db2ff;
@@ -264,34 +265,35 @@ img {
 
 .indexTitle {
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   grid-column: 1 / span 1;
   grid-row: 2 / span 3;
 }
 
 .indexEducation {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   grid-column: 1 / span 1;
   grid-row: 4 / span 1;
 }
 
-.indexSkills {
+.indexExperience {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   grid-column: 1 / span 1;
   grid-row: 5 / span 1;
 }
 
-.indexExperience {
+.indexSkills {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   grid-column: 1 / span 1;
-  grid-row: 6 / span 1;}
+  grid-row: 6 / span 1;
+}
 
 .indexArt {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   grid-column: 1 / span 1;
   grid-row: 7 / span 1;}
 
@@ -317,28 +319,28 @@ img {
   
   .indexEducation {
     justify-self: center;
-    font-size: 5em;
+    font-size: 4em;
     grid-column: 2 / span 2;
-    grid-row: 4 / span 1;
-  }
-  
-  .indexSkills {
-    justify-self: center;
-    font-size: 5em;
-    grid-column: 5 / span 2;
     grid-row: 4 / span 1;
   }
   
   .indexExperience {
     justify-self: center;
-    font-size: 5em;
+    font-size: 4em;
+    grid-column: 5 / span 2;
+    grid-row: 4 / span 1;
+  }
+  
+  .indexSkills {
+    justify-self: center;
+    font-size: 4em;
     grid-column: 2 / span 2;
     grid-row: 5 / span 1;
   }
   
   .indexArt {
     justify-self: center;
-    font-size: 5em;
+    font-size: 4em;
     grid-column: 5 / span 2;
     grid-row: 5 / span 1;
   }
@@ -363,31 +365,31 @@ img {
 }
 
 .indexEducation {
-  font-size: 5em;
+  font-size: 6em;
   grid-column: 2 / span 1;
   grid-row: 4 / span 1;
 }
 
-.indexSkills {
-  font-size: 5em;
+.indexExperience {
+  font-size: 6em;
   grid-column: 3 / span 1;
   grid-row: 4 / span 1;
 }
 
-.indexExperience {
-  font-size: 5em;
+.indexSkills {
+  font-size: 6em;
   grid-column: 4 / span 1;
   grid-row: 4 / span 1;
 }
 
 .indexArt {
-  font-size: 5em;
+  font-size: 6em;
   grid-column: 5 / span 1;
   grid-row: 4 / span 1;
 }
 }
 
-/*Skills Section*/
+/*Skills Section Start*/
 
 .break {
   display: block;
@@ -521,6 +523,135 @@ img {
       font-size: 1.5rem;
       line-height: 2.25em;  
       padding-right: 5%;
+      }
+}
+
+/*Experience Section Start*/
+
+.containerExperience {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  gap: 0;
+  justify-content: center;
+}
+
+.ET1{
+  font-size: 1.5rem;
+  line-height: 2.25em;
+  text-align: left;
+  align-self: center;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  padding-bottom: 12.5%;
+  color: lightcoral;
+}
+
+.ET2{
+  font-size: 1.5rem;
+  line-height: 2.25em;
+  text-align: left;
+  align-self: center;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  padding-bottom: 12.5%;
+  color: lightsalmon;
+}
+
+.ET3{
+  font-size: 1.5rem;
+  line-height: 2.25em;
+  text-align: left;
+  align-self: center;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  padding-bottom: 12.5%;
+  color: lightsteelblue;
+}
+
+.EI1{
+  flex-grow: 1;
+  width: 100%;
+}
+
+.EI2{
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (min-width: 426px) {
+
+  .containerExperience {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+  }
+
+  .exp1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  
+  .exp2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+  
+  .exp3 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  .exp4 {
+    grid-column: 2 /span 2;
+    grid-row: 2 / span 1;
+  }
+  
+  .exp5 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
+  
+  .exp6 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+  }
+    .EI1 {
+      display: none;
+    }
+    .EI2 {
+      display: block;
+    }
+
+    .ET1 {
+      text-align: right;
+      align-self: center;
+      padding-left: 5%;
+      font-size: 1.5rem;
+      line-height: 2.25em;  
+      padding-right: 0%;
+      padding-bottom: 0;
+      }
+
+    .ET2 {
+    text-align: left;
+    align-self: center;
+    padding-left: 0%;
+    font-size: 1.5rem;
+    line-height: 2.25em;  
+    padding-right: 5%;
+    }
+    .ET3 {
+      text-align: right;
+      align-self: center;
+      padding-left: 5%;
+      font-size: 1.5rem;
+      line-height: 2.25em;  
+      padding-right: 0%;
       }
 }
 
@@ -826,7 +957,7 @@ label {
   }
 }
 
-/* Contact Footer */
+/* Contact Footer Start*/
 
 .contact {
   display: none;
