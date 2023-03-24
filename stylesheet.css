@@ -51,33 +51,34 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 4em;
   line-height: 1em;
-  padding-top: 2em;
-  margin: auto auto .5em auto;
+  padding-top: .5em;
 }
 
 h4 {
+  font-size: 2em;
+  line-height: 1em;
+  padding-top: .25em;
+  padding-bottom: 0%;
+  margin: 0%;
+}
+
+h5 {
   font-size: 2.5em;
   line-height: 1em;
-  padding: 0.625em auto auto auto;
+  padding-bottom: 0.625em;
   margin: .5em 0 .25em 0;
   color: black;
 }
 
 p {
   font-size: 1.5rem;
-  line-height: 1.5em;
+  line-height: 1.75em;
   text-align: left;
   max-width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-}
-
-p3 {
-  font-size: 1.5rem;
-  line-height: 2em;
-  text-align: left;
 }
 
 @media only screen and (min-width: 426px) {
@@ -96,16 +97,23 @@ p3 {
     padding-left: 0;
   }
 
-  p { 
-     font-size: 2rem;
-     line-height: 3.5rem; 
+  h3 {
+    font-size: 5.75em;
+    line-height: 1em;
+    padding-top: 1em;
   }
 
-  p3 {
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+  h4 {
+    font-size: 5em;
+    line-height: 1em;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  p { 
+     font-size: 2rem;
+     line-height: 3.5rem;
+     margin-top: 0;
   }
 
 }
@@ -119,7 +127,21 @@ p3 {
     padding-left: 0;
   }
 
+  h3 {
+    font-size: 7.5em;
+    line-height: 1em;
+    padding-top: 1em;
+  }
+
   h4 {
+    font-size: 7rem;
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 0%;
+    margin: 0%;
+  }
+
+  h5 {
     font-size: 3.5rem;
     line-height: 1em;
     padding-top: 5%;
@@ -132,19 +154,6 @@ p3 {
      line-height: 5.5rem; 
   }
 
-}
-
-p2 {
-  font-size: 1.125em;
-  font-style: italic;
-}
-
-
-p4 {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  padding: auto auto 0.625em auto;
-  color: black;
 }
 
 ol {
